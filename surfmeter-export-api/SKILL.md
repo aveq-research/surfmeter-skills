@@ -259,7 +259,7 @@ curl -s -X POST \
   }'
 ```
 
-Anomaly events live in `anomaly_events-*` indices and are not in the Export API at all — searching here is the only HTTP way to reach them. The documents key off `client_label`, `measurement_type`, `subject`, and the `first_seen_at` / `last_seen_at` dates; to see the rest, pull one sample (`{"body": {"size": 1}}`) or consult `@surfmeter/elasticsearch-attributes/src/types/AnomalyEvent.ts`.
+Anomaly events live in `anomaly_events-*` indices and are not in the Export API at all — searching here is the only HTTP way to reach them. The documents key off `client_label`, `measurement_type`, `subject`, and the `first_seen_at` / `last_seen_at` dates; to see the rest, pull one sample (`{"body": {"size": 1}}`).
 
 ### Resolving anomaly events
 
